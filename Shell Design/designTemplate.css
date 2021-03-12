@@ -1,0 +1,50 @@
+h1{
+    color: blue;
+    text-align: center;
+    padding: 25px;
+}
+
+body{
+    background-image: url("cool-background.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#d1{
+    color: darkslategray;
+    font-style: oblique;
+    padding: 10px;
+    }
+
+p{
+    text-align: center;
+    font-size: 25px;
+    color: darkorchid;
+}
+
+div {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  input[type=submit]:hover {
+    background-color: orange;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
