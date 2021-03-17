@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="design.css">
+
+            <script src="info.js"> </script>
+
+    <style type = "text/css">
+    h1{
+        text-align: center;
+        padding: 25px;
+
+    }
+
+
+    </style>
+
+    <title>Simply Blogging</title>
+    <h1> Simply Blogging</h1>
+
+
+
+</head>
+<body>
+
+    <u1 class="nav justify-content-center"> 
+        <li class="nav-item"> <a href="#" class="nav-link"> About us </a> </li>
+        <li class="nav-item"> <a href="#" class="nav-link"> Contact us</a>  </li>
+        <li class="nav-item"> <a href="#" class="nav-link"> Home Page </a>  </li>
+        <li class="nav-item"> <a href="#" class="nav-link"> Login </a>  </li>
+
+    </u1>
+
+    <form class="form-group"> 
+        <div class="container">
+            <div class = "row">
+                <label> Title </label> <input type="text" id="title" class="form-control"> <br/> 
+            </div>
+    
+            <div class = "row">
+                <label> Description</label>
+            <textarea id="desc" class="form-control"> Write a Description </textarea>
+            <br/> <br/> <br/> 
+            <br/> <br/> <br/> 
+            </div>
+            <br/>
+
+            <div class = "row">
+                <label> Add Image</label>
+            <input type="file" id="imageId" class="form-control"> <br/>
+            </div>
+
+            <br/>
+            <div class = "row">
+                <br/> <input type="button" value = "Submit"  class = "btn btn-primary" onclick="addPost()">  
+            </div>
+        </div>
+
+    </form>
+        <h1 id="h1"> </h1>
+            
+        <table id="L1">
+            <tbody class = "justify-content-center">
+            </tbody>
+        </table>
+        
+    
+</body>
+</html>
