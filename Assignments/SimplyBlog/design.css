@@ -9,6 +9,8 @@ h2{
 h1{
 	font-size: 75px;
 	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+    padding: 25px;
 }
 
 body{
