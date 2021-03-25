@@ -1,0 +1,22 @@
+<div class = "p-3 mb-2 bg-secondary text-white">
+    <input type="button" value="Login" class="btn btn-light btn-primary-spacing" (click) = "loginPage()"/>
+    
+    <h2 class="text-center display-3">Register Page</h2>
+    <form #userRef="ngForm" (ngSubmit)="registerUser(userRef.value)" class="form-group">
+
+        <label class = "btn-primary-spacing">First Name</label>
+        <input type="text" name="Fname" ngModel class="form-control btn-primary-spacing"/> <br/>
+        <label class = "btn-primary-spacing">Last Name</label>
+        <input type="text" name="Lname" ngModel class="form-control btn-primary-spacing"/> <br/>
+
+        <label class = "btn-primary-spacing" >UserName</label>
+        <input type="text" name="user" ngModel class="form-control btn-primary-spacing"/> <br/>
+        <label class = "btn-primary-spacing">Password</label>
+        <input type="password" name="pass" ngModel class="form-control btn-primary-spacing"/> <br/>
+        <input type="submit" value="Submit" class="btn btn-light btn-primary-spacing"/>
+        <input type="reset" value="Reset" class="btn btn-light btn-primary-spacing"/>
+    </form>
+     <br/>
+    {{msg}}
+ 
+</div>

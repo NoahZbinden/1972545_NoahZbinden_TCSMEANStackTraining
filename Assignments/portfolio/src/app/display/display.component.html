@@ -1,0 +1,32 @@
+<div class = "p-3 mb-2 bg-secondary text-white">
+    {{userName()}}
+    <h2 class="text-center display-3">My Portfolio</h2>
+    <p class="text-left display-3 font-size"> Welcome {{UserName}}</p> 
+
+    <form #userRef="ngForm" (ngSubmit)="addInfo(userRef.value)" class="form-group">
+        <label class = "btn-primary-spacing">Contact Name</label>
+        <input type="text" name="cName" ngModel class="form-control btn-primary-spacing"/> <br/>
+        <label class = "btn-primary-spacing">Contact Number</label>
+        <input type="text" name="cNumber" ngModel class="form-control btn-primary-spacing"/> <br/>
+        <input type="submit" value="Add Info" class="btn btn-light btn-primary-spacing"/>
+    </form>
+    <br/>
+    <br/>
+
+    <table class = "table text-white" > 
+      <thead>
+      <tr>
+        <th scope = "col"># </th> 
+        <th scope = "col">Name</th>
+        <th scope = "col">Phone Number</th>
+      </tr>
+    </thead>
+    <tbody *ngFor = "let info of ArrayName, let i = index" class = "display-3 font-size">
+        <tr>
+          <td scope="row"> {{i+1}}</td>
+          <td >{{info}}</td>
+          <td >{{ArrayNum[i]}}</td>
+        </tr>
+    </tbody>
+      </table>
+</div>

@@ -1,0 +1,15 @@
+<div class = "p-3 mb-2 bg-secondary text-white">
+    
+    <h2 class="text-center display-3">Login Form</h2>
+    <form #userRef="ngForm" (ngSubmit)="checkUser(userRef.value)" class="form-group">
+        <label class = "btn-primary-spacing">UserName</label>
+        <input type="text" name="user" ngModel class="form-control btn-primary-spacing"/> <br/>
+        <label class = "btn-primary-spacing">Password</label>
+        <input type="password" name="pass" ngModel class="form-control btn-primary-spacing"/> <br/>
+        <input type="submit" value="Login" class = "btn btn-light btn-primary-spacing"/>
+        <input type="button" value="Register" class="btn btn-light btn-primary-spacing" (click) = "Page()"/>
+        
+    </form>
+    {{msg}}
+     
+</div>
