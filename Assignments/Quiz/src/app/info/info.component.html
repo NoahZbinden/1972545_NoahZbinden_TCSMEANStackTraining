@@ -1,0 +1,27 @@
+<div class = "img"> 
+    <h1 class="display-2 text-center bold">Quiz of Capitals</h1>
+    <br/>
+    <form class="form-check " *ngFor = "let inf of info, let i = index" > 
+     <p class = "bold">{{inf.Q}}:</p>
+     <input class="form-check-input mt-0 mt-1" type="radio" [name] = "i+1"  value="1" (change) = "radioChangeHandler($event)">
+     <label class="form-check-label mt-0 bold" for="male" *ngIf = "checkAns(1,inf.CA)" [ngStyle]="{color: 'green'}" >{{inf.A1}}</label>
+     <label class="form-check-label mt-0 bold" for="male" *ngIf = "!checkAns(1,inf.CA)" >{{inf.A1}}</label><br> 
+
+     <input class="form-check-input mt-0 mt-1" type="radio" [name] = "i+1" value="2" (change) = "radioChangeHandler($event)" >
+     <label class="form-check-label mt-0 bold" for="male" *ngIf = "checkAns(2,inf.CA)" [ngStyle]="{color: 'green'}" >{{inf.A2}}</label>
+     <label class="form-check-label mt-0 bold" for="male" *ngIf = "!checkAns(2,inf.CA)" >{{inf.A2}}</label><br> 
+
+     <input class="form-check-input mt-0" type="radio" [name] = "i+1" value="3" (change) = "radioChangeHandler($event)" >
+     <label class="form-check-label mt-0 bold" for="male" *ngIf = "checkAns(3,inf.CA)" [ngStyle]="{color: 'green'}">{{inf.A3}}</label>
+     <label class="form-check-label mt-0 bold" for="male" *ngIf = "!checkAns(3,inf.CA)" >{{inf.A3}}</label><br> 
+
+     <input class="form-check-input mt-0" type="radio" [name] = "i+1" value="4" (change) = "radioChangeHandler($event)">
+     <label class="form-check-label mt-0 bold" for="male" *ngIf = "checkAns(4,inf.CA)" [ngStyle]="{color: 'green'}">{{inf.A4}}</label>
+     <label class="form-check-label mt-0 bold" for="male" *ngIf = "!checkAns(4,inf.CA)" >{{inf.A4}}</label><br> 
+
+  <br/>      
+  <br/>
+    </form>   
+    <button class = "btn-primary-spacing btn btn-dark" (click)="Submit()">Submit Answers</button>
+    <h1 class="display-5 text-center bold">{{results}}</h1>
+</div>

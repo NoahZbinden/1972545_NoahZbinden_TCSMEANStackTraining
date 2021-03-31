@@ -1,0 +1,23 @@
+.mt-0 {
+    margin-left: 4px !important;
+  }
+
+.mt-1 {
+    margin-top: 5px !important;
+  }
+
+.img{
+    background-image: url( "C:\Users\manoa\OneDrive\Desktop\GitPractice\1972545_NoahZbinden_TCSMEANStackTraining\Assignments\Quiz\src\assets\map.jpg");
+    background-size: 150px, 150px;
+}  
+
+.bold{
+    font-weight: bold;
+}
+
+.btn-primary-spacing 
+{
+margin-left: 30px;
+margin-right: 5px;
+margin-bottom: 35px !important;
+}

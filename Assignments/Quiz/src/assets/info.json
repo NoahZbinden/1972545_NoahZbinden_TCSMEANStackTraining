@@ -1,0 +1,8 @@
+[
+    {"Q": "What is the capital of Australia?", "A1": "Canberra", "A2":"Sydney", "A3":"Melborne", "A4":"Perth", "CA":1,"ID":1},
+    {"Q": "What is the capital of Canada?", "A1": "Toronto", "A2":"Montreal", "A3":"Ottawa", "A4":"Vancouver", "CA":3,  "ID":2},
+    {"Q": "What is the capital of Germany?", "A1": "Berlin", "A2":"Bonn", "A3":"Munich", "A4":"Frankfurt", "CA":2,  "ID":3},
+    {"Q": "What is the capital of Germany?", "A1": "Merida", "A2":"Puebla", "A3":"Cancun", "A4":"Mexico City", "CA":4,  "ID":4}
+    
+
+]
