@@ -1,0 +1,51 @@
+<div> 
+    <mat-grid-list cols = "2" rowHeight="1:1">
+        <mat-grid-tile style="font-size: 18px; background-color: grey">
+    <form class = "example-form" #taskRef = "ngForm" (ngSubmit) ="storeTask(taskRef.value)" > 
+        <mat-card-title color = "primary"> Add Tasks Here</mat-card-title> <br>
+        <mat-form-field class="example-full-width"> 
+            <mat-label> ID</mat-label>
+            <input matInput type = "text"  name = "id" ngModel color = "primary"> 
+        </mat-form-field>
+        <br/>
+        <mat-form-field class="example-full-width"> 
+            <mat-label> Name</mat-label>
+            <input matInput type = "text" name = "name" ngModel color = "primary"> 
+        </mat-form-field>
+        <br/>
+        <mat-form-field class="example-full-width"> 
+            <mat-label> Task</mat-label>
+            <input matInput type = "text" name = "task" ngModel color = "primary"> 
+        </mat-form-field>
+        <br/>
+        <mat-form-field class="example-full-width"> 
+            <mat-label> Deadline</mat-label>
+            <input matInput type = "date" name = "deadline" ngModel color = "primary"> 
+        </mat-form-field>
+        <br/>
+        <button mat-stroked-button color = "primary"  type = "submit">Store</button>
+    </form>
+
+    </mat-grid-tile>
+        <mat-grid-tile  style="font-size: 18px; background-color: maroon; color:white">
+        <table class = "tborder" > 
+         <thead> 
+             <tr >
+                <th > Id</th>
+                <th > Name</th> 
+                <th > Task</th>
+                <th > Deadline</th> 
+             </tr>
+            </thead>
+            <tbody *ngFor = "let info of tasks">
+             <tr class = "tborder">
+                 <td > {{info.id}}</td>
+                 <td > {{info.name}}</td>
+                 <td > {{info.task}}</td>
+                 <td > {{info.deadline}}</td>
+             </tr>
+         </tbody> 
+         </table>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
