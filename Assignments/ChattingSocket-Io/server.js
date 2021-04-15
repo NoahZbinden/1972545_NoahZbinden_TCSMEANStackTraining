@@ -14,4 +14,3 @@ io.on("connection",(socket)=> {
         console.log("Your Message is : "+ msg.y);
     })
 })
-http.listen(9090,()=>console.log('server running on port number 9090'));
